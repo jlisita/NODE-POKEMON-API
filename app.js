@@ -16,6 +16,7 @@ app
     sequelize.initDb();
 
     // ici nous placerons nos futurs points de temrinaison.
+    require('./src/routes/findAllPokemons')(app)
 
 
 app.listen(port, () => console.log(`Notre application Node est démarrée sur http://localhost:${port}`))
