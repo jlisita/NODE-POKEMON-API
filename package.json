@@ -4,12 +4,15 @@
   "description": "an awesome API Rest to handle some pokemons",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "debug": "node --inspect app.js"
   },
   "author": "Julien",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "mariadb": "^3.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.9.7",
