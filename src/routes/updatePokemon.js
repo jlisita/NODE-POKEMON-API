@@ -12,7 +12,7 @@ module.exports = (app) => {
             if(pokemon === null)
             {
                 const message = "le pokémon n'existe pas, essayer avec une autre identifiant"
-                res.status(404).json({message, data: error});
+                return res.status(404).json({message, data: error});
             }
             const message = `Le pokémon ${pokemon.name} a bien été modifié`;
             res.json({message, data: pokemon})
